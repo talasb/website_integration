@@ -16,6 +16,15 @@ body{
 }
 
 
+h4 {
+	font-family: Work Sans, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+}
+
 
 
 
@@ -197,8 +206,7 @@ Header
 }
 
 .header-bg {
-	position: absolute;
-	z-index: ;
+	position: relative;
 	top: 0px;
 	left: 0;
 	right: 0;
@@ -273,7 +281,17 @@ Header
 	bottom: 0;
 	right: 0;
 	left: 0;
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1px;
+	background-color: white;
+
+}
+
+
+
+.btn-feat a{
+	width: 100%;
 }
 
 .btn-back {
@@ -286,22 +304,10 @@ Header
 
 
 
-.back {
-	border-right: solid white 0.5px !important;
-}
-
-.next {
-    border-left: solid white 0.5px !important;
-}
-
-
-
 .title-bg {
-	position: absolute;
-	top:239px;
-	left: 112px;
-	height: 168px;
-	width: 556px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 
@@ -313,4 +319,187 @@ Header
 	font-size: 72px;
 	line-height: 84px;
 	color: #292E3D;
+	position: absolute;
+	left: 112px;
+
+}
+
+
+/*-----------------------------------------------------------------------------*\
+Section "Our reputation"
+\*-----------------------------------------------------------------------------*/
+
+.card-section {
+	height: 433px;
+    padding-top: 60px;
+}
+
+.card-section .cards {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+.card-section h4 {
+	font-family: Work Sans, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 50px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 296px;
+	border-radius: 5px;
+	border: 2px solid #E0E3EB;
+	padding: 20px;
+}
+
+.card img {
+	height: 40px;
+	width: 40px;
+}
+
+
+.card h5 {
+	font-family: Work Sans, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+	color: #3D445C;
+	margin: 18px 0;
+
+}
+
+
+.card p {
+	font-family: Work Sans, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #858EAD;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+
+.cards .margin{
+	margin-right: 66px;
+}
+
+
+
+/*-----------------------------------------------------------------------------*\
+Section "About Us"
+\*-----------------------------------------------------------------------------*/
+
+.section-about {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container-section {
+	height: 945px;
+	width: 1440px;
+	padding-top: 74px;
+	padding-left: 114px;
+	position: relative;
+}
+.section-about img {
+	height: 669px;
+	width: 902px;
+	margin: 0;
+}
+
+.about-card {
+	height: 523px;
+	width: 488px;
+	background-color: #2947A9;
+	position: absolute;
+	top: 147px;
+	left: 840px;
+
+}
+
+.about-card {
+	color: white;
+	padding: 40px;
+	box-sizing: border-box;
+	text-align: left;
+
+}
+
+.about-card h4 {
+	text-align: left;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 37px;
+
+}
+.about-card p {
+	font-family: Work Sans, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	color: #FFFFFF;
+	margin: 0;
+	margin-bottom: 74px;
+
+}
+
+.about-card a {
+	font-family: Work Sans, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #2947A9;
+	background-color: white;
+	padding: 16px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+
+}
+
+
+/*-----------------------------------------------------------------------------*\
+Section "Services"
+\*-----------------------------------------------------------------------------*/
+
+
+
+.section-services {
+	height: 608px;
+	background-color: #F6F8F7;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cards-services {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 48px 98px;
+	height: 410px;
+	width: 1008px;
+}
+
+.card {
+	height: 181px;
+	width: 271px;
 }
