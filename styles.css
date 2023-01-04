@@ -3,8 +3,7 @@
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,700;1,700&display=swap');
+<@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 
 body{
@@ -12,12 +11,13 @@ body{
 	margin: unset;
 	padding: unset;
 	box-sizing: border-box;
-	background: #f1f1f1;
+	background: #ffffff;
+	font-family: 'Work Sans', sans-serif;
 }
 
 
 h4 {
-	font-family: Work Sans, sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 36px;
@@ -187,6 +187,7 @@ Menu
 		font-size: 20px;
 
 	}
+
 }
 
 
@@ -405,14 +406,16 @@ Section "About Us"
 \*-----------------------------------------------------------------------------*/
 
 .section-about {
+	height: 945;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 202px;
 }
 
 .container-section {
-	height: 945px;
-	width: 1440px;
+	height: 669px;
+	width: 1214px;
 	padding-top: 74px;
 	padding-left: 114px;
 	position: relative;
@@ -490,16 +493,128 @@ Section "Services"
 	justify-content: center;
 }
 
-.cards-services {
+.section-services .cards-services {
+	height: 410px;
+	width: 1008px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-services .cards {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	grid-gap: 48px 98px;
-	height: 410px;
-	width: 1008px;
+	grid-gap: 35px 71px;
 }
 
-.card {
-	height: 181px;
-	width: 271px;
+.section-services .card {
+	width: 198.3px;
+  height: 132.44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #2947A9;
+  box-shadow: 0px 0px 27.0741px -1.46346px rgba(17, 24, 39, 0.05);
+  border-radius: 2.92693px;
+}
+.section-services .card img {
+	width: 30px;
+  height: 30px;
+}
+
+
+.section-services .card .separate {
+  width: 43.9px;
+  height: 1.46px;
+  background-color: #ffffff;
+  margin: 14.63px 0;
+}
+
+.section-services .card p {
+	font-family: Work Sans, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14.6346px;
+	line-height: 17px;
+	text-align: center;
+	color: white;
+}
+
+.section-services .cards .white {
+	background-color: #ffffff;
+}
+
+
+.section-services .cards .blue {
+	background: #E0E3EB
+}
+
+.section-services .cards .bluetxt {
+	color: #2947A9;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------*\
+Section Formulaire
+\*-----------------------------------------------------------------------------*/
+
+.form-section {
+	height: 463px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-section .container  {
+	width: 433.19px;
+}
+
+.form-section .container h4  {
+	font-family: Work Sans, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26.3424px;
+	line-height: 31px;
+	color: #292E3D;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+
+.form-section .container p  {
+	margin-bottom: 27px;
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14.6346px;
+	line-height: 17px;
+	text-align: center;
+
+/* Neutral/800 */
+
+color: #292E3D;
+}
+
+
+input[type="text"] {
+  width: 100%;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+	border: 0.731732px solid #E0E3EB;
+	border-radius: 2.92693px;
+}
+
+
+.form-section .field-group  {
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
 }
