@@ -6,6 +6,9 @@
 	<title>EX1-J2 | Maquette figma integration</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -72,15 +75,19 @@
 <!-- END Card Section -->
 
 <!-- About Section -->
-<div class="section-about">
-	<div class="container-section">
-		<img src="assets/img-about.svg">
-		<div class="about-card">
-			<h4>About us</h4>
-			<p>For more than 30 years we have been delivering world-class construction and we’ve built many lasting relationships along the way. <br><br>We’ve matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
-			<a href="#" class="btn-about">More on Our History</a>
+<div id="presentation">
+	
+	<div class="content">
+		<div class="photo">
+			<img src="assets/img-about.svg" alt="">
 		</div>
-	</div>	
+		<div class="texts">
+			<h4>About us</h4>
+			<p>For more than 30 years we have been delivering world-class construction and we’ve built many lasting relationships along the way. <br><br> We’ve matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
+			<a href="#">More on Our History</a>
+		</div>
+	</div>
+
 </div>
 <!-- END About Section -->
 
@@ -124,6 +131,67 @@
 </div>
 <!-- END Service section -->
 
+
+
+
+<!-- Experience section -->
+
+<div class="xp-section">
+	<div class="xp-count">
+
+		<!-- card -->
+		<div class="card-count business">
+			<span class="">30</span>
+			<div class="info-count">
+				<div class="separate"></div>
+				<p>Years in Business</p>
+			</div>
+			<img src="assets/Business.svg">
+		</div>
+
+		<!-- card -->
+		<div class="card-count awards">
+			<span class="">37</span>
+			<div class="info-count">
+				<div class="separate"></div>
+				<p>Awards Win</p>
+			</div>
+			<img src="assets/awards.svg">
+		</div>
+
+		<!-- card -->
+		<div class="card-count projects">
+			<span class="">123</span>
+			<div class="info-count">
+				<div class="separate"></div>
+				<p>Projects Completed</p>
+			</div>
+			<img src="assets/projects.svg">
+		</div>
+
+		<!-- card -->
+		<div class="card-count happy">
+			<span class="">84</span>
+			<div class="info-count">
+				<div class="separate"></div>
+				<p>Happy Clients</p>
+			</div>
+			<img src="assets/happy.svg">
+		</div>
+
+	</div>
+
+	<div class="xp-info">
+		<h3>30 Years Experience</h3>
+		<p>Our company has been the leading provided construction services to clients throughout the USA since 1988.</p>
+		<a href="#">Contact Us</a>
+	</div>
+</div>
+
+<!-- END Experience section -->
+
+
+
 <!-- Formulaire section -->
 <div class="form-section">
 <div class="container">
@@ -135,33 +203,40 @@
 		<form>
 			<div class="field-group">
 			<div class="field">
-			  <label for="name">Your Name*</label><br>
-			  <input type="text" id="name" name="name"><br>
+			  <input type="text" id="Name" name="Name" placeholder="Your Name*"><br>
 		  </div>
 		  <div class="field">
-			  <label for="name">Email*</label><br>
-			  <input type="text" id="name" name="name"><br>
+			  <input type="email" id="Email" name="Email" placeholder="Email*"><br>
 		  </div>
 		  <div class="field">
-			  <label for="name">Reason for Contacting*</label><br>
-			  <input type="text" id="name" name="name"><br>
+			  <select id="Reason" name="Reason">
+				  <option value="" disabled selected>Reason for Contacting*</option>
+				  <option value="Reason1">Reason 1</option>
+				  <option value="Reason">Reason 2</option>
+				  <option value="Reason">Reason 3</option>
+        </select>
 		  </div>
 		  <div class="field">
-			  <label for="name">Phone</label><br>
-			  <input type="text" id="name" name="name"><br>
+			  <input type="text" id="Phone" name="Phone" placeholder="Phone"><br>
 		  </div>
 		</div>
 		  <div class="field">	
-			  <label for="name">Message</label><br>
-			  <input type="text" id="name" name="name"><br>
+			  <textarea id="Message" name="Message" rows="5" cols="50" placeholder="Message"></textarea>
+			  <label class="requier-label"><span style="color: #C40303;">*</span> indicates a required field</label>
 		  </div>
-		  <input type="submit" value="Envoyer">
+		  <div class="submit-field">	
+		  	<input type="submit" value="Submit">
+		  </div>	
 		</form> 
 	</div>
 </div>	
 </div>
 <!-- END Formulaire section -->
 
+
+<!-- Footer -->
+<div class="footer"></div>
+<!-- END Footer -->
 
 
 

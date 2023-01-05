@@ -17,7 +17,7 @@ body{
 
 
 h4 {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 36px;
@@ -405,54 +405,60 @@ Section "Our reputation"
 Section "About Us"
 \*-----------------------------------------------------------------------------*/
 
-.section-about {
-	height: 945;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 202px;
+#presentation {
+	padding: 74px 0 200px 0;
 }
 
-.container-section {
-	height: 669px;
-	width: 1214px;
-	padding-top: 74px;
-	padding-left: 114px;
+#presentation >.content{
+	width: 1314px;
+	height: 770px;
+	margin-left: auto;
+	margin-right: auto;
 	position: relative;
-}
-.section-about img {
-	height: 669px;
-	width: 902px;
-	margin: 0;
+
 }
 
-.about-card {
-	height: 523px;
+#presentation >.content >.photo{
+	display: inline-block;
+	height: 100%;
+/*	box shadow raduis*/
+}
+
+#presentation >.content >.photo >img {
+	height: 100%;
+	border-radius: 2px;
+}
+
+#presentation >.content >.texts{
 	width: 488px;
-	background-color: #2947A9;
+	height: 523px;
 	position: absolute;
-	top: 147px;
-	left: 840px;
-
-}
-
-.about-card {
-	color: white;
-	padding: 40px;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background: #2947A9;
+	box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+	border-radius: 2px;
+	padding: 50px 60px 60px 40px;
 	box-sizing: border-box;
-	text-align: left;
 
 }
 
-.about-card h4 {
+#presentation >.content >.texts >h4{
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
 	text-align: left;
+	color: #FFFFFF;
 	margin: 0;
-	margin-top: 10px;
 	margin-bottom: 37px;
 
 }
-.about-card p {
-	font-family: Work Sans, sans-serif;
+
+#presentation >.content >.texts >p{
+	font-family: 'Work Sans';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -463,20 +469,30 @@ Section "About Us"
 
 }
 
-.about-card a {
-	font-family: Work Sans, sans-serif;
+#presentation >.content >.texts >a{
+	font-family: 'Work Sans';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 21px;
 	text-align: center;
-	color: #2947A9;
-	background-color: white;
 	padding: 16px 20px;
+	background: #FFFFFF;
+	border: 2px solid #2947A9;
+	border-radius: 6px;
+	color: #2947A9;
 	text-decoration: none;
-	border-radius: 5px;
+	cursor: pointer;
+
 
 }
+
+#presentation >.content >.texts > a:hover{
+	background-color: orangered;
+	
+
+}
+
 
 
 /*-----------------------------------------------------------------------------*\
@@ -565,14 +581,16 @@ Section Formulaire
 \*-----------------------------------------------------------------------------*/
 
 .form-section {
-	height: 463px;
+	height: 500px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background: #F6F8F7;
+	padding: 25px 0;
 }
 
 .form-section .container  {
-	width: 433.19px;
+	width: 500px;
 }
 
 .form-section .container h4  {
@@ -595,14 +613,11 @@ Section Formulaire
 	font-size: 14.6346px;
 	line-height: 17px;
 	text-align: center;
-
-/* Neutral/800 */
-
-color: #292E3D;
+	color: #292E3D;
 }
 
 
-input[type="text"] {
+input[type="text"], input[type="email"] , select  {
   width: 100%;
   padding: 7px 0;
   margin-bottom: 20px;
@@ -617,4 +632,298 @@ input[type="text"] {
 	display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
+}
+
+
+
+input::placeholder {
+  padding: 6px 7px;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.1712px;
+  line-height: 15px;
+  color: #A3AAC2;
+}
+
+
+.field textarea {
+	width: 100%;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  width: 100%;
+  padding: 7px 6px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+	border: 0.731732px solid #E0E3EB;
+	border-radius: 2.92693px;
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13.1712px;
+	line-height: 15px;
+  color: #A3AAC2;
+}
+
+.field textarea::placeholder {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13.1712px;
+	line-height: 15px;
+  color: #A3AAC2;
+}
+
+
+
+
+
+
+.requier-label {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11.7077px;
+	line-height: 14px;
+	color: #667299;
+}
+
+.submit-field {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 21px;
+
+}
+
+
+
+.submit-field input {
+	height: 38.42px;
+	width: 198.3px;
+	background: #2947A9;
+	border-radius: 1.46346px;
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13.1712px;
+	line-height: 15px;
+	text-align: center;
+	border: none;
+	color: #FFFFFF;
+
+}
+
+
+select {
+	width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13.1712px;
+	line-height: 15px;
+	color: #A3AAC2;
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------------*\
+XP SECTION
+\*-----------------------------------------------------------------------------*/
+
+
+.xp-section {
+	height: 723px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+/*info section*/
+
+.xp-info {
+	width: 359px;
+	height: 358px;
+	margin-left: 40px;
+}
+
+
+.xp-section > .xp-info > h3 {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 70px;
+	color: #2947A9;
+	margin:0;
+}
+
+.xp-section > .xp-info > p {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	color: #525B7A;
+	margin-top: 40px;
+	margin-bottom: 67px;
+}
+
+.xp-section > .xp-info > a {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 16px 39px;
+	background: #2947A9;
+	border-radius: 2px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+/*count section*/
+
+
+
+.xp-section > .xp-count {
+	width: 641px;
+	height: 563px;
+	margin-right: 40px;
+}
+
+
+.xp-section > .xp-count > .card-count {
+	padding: 30px 65px 30px 30px;
+	background: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	box-shadow: 0px 12px 16px -4px rgba(17, 24, 39, 0.1), 0px 4px 6px -2px rgba(17, 24, 39, 0.05);
+	border-radius: 4px;
+	position: absolute;
+}
+
+/*position card*/
+.xp-section > .xp-count > .business {
+	bottom: 0;
+	left: 46px;
+}
+
+.xp-section > .xp-count > .awards {
+	bottom: 105px;
+	left: 246px;
+	z-index: 3;
+}
+.xp-section > .xp-count > .projects {
+	bottom: 248px;
+}
+.xp-section > .xp-count > .happy {
+	left: 300px;
+	bottom: 347px;
+}
+
+
+.xp-section > .xp-count {
+	position: relative;
+}
+
+
+.xp-section > .xp-count > .card-count > span {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 72px;
+	line-height: 84px;
+	display: flex;
+	align-items: flex-end;
+	color: #292E3D;
+}
+
+
+.xp-section > .xp-count > .card-count > .info-count > p {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	color: #667299;
+	margin: 0px;
+}
+
+.xp-section > .xp-count > .card-count > .info-count {
+	display: flex;
+}
+
+.xp-section > .xp-count > .card-count > .info-count > .separate {
+	width: 7px;
+	height: 28px;
+	background: #F9995D;
+	margin-right: 12px;
+}
+
+
+.xp-section > .xp-count > .card-count > img {
+	height: 84px;
+	position: absolute;
+	bottom: -40px;
+	right: -40px;
+}
+
+
+.xp-section > .xp-count > .projects > img {
+	height: 84px;
+	position: absolute;
+	top: -40px;
+	left: -40px;
+}
+	
+
+.xp-section > .xp-count > .awards > img {
+	height: 84px;
+	position: absolute;
+	top: -10px;
+	right: -40px;
+}
+
+.xp-section > .xp-count > .happy > img {
+	height: 84px;
+	position: absolute;
+	top: -10px;
+	right: -40px;
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------*\
+FOOTER
+\*-----------------------------------------------------------------------------*/
+
+
+.footer {
+	background-color: #154478;
+	height: 800px;
 }
